@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ThoughtList = ({ thoughts, title }) => {
   if (!thoughts.length) {
@@ -30,7 +30,8 @@ const ThoughtList = ({ thoughts, title }) => {
                   {thought.reactionCount ? 'see' : 'start'} the discussion!
                 </p>
               </Link>
-            </div>          </div>
+            </div>
+          </div>
         ))}
     </div>
   );
