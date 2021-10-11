@@ -3,9 +3,10 @@ import { Redirect, useParams } from 'react-router-dom';
 import ThoughtForm from '../components/ThoughtForm';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
-import { ADD_FRIEND } from '../utils/mutations';
+
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
+import { ADD_FRIEND } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 const Profile = props => {
@@ -74,8 +75,7 @@ const Profile = props => {
           />
         </div>
       </div>
-      <div className="mb-3">{!userParam && <ThoughtForm />}
-      </div>
+      <div className="mb-3">{!userParam && <ThoughtForm />}</div>
     </div>
   );
 };
